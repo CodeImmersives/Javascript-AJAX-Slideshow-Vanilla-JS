@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <title>JS Slideshow w JSON n AJAX</title>
+    <meta charset="utf-8">
+	
+	<meta name="Description" content="PURE VANILLA Javascript slideshow / image gallery application -- NO jQuery, frameworks, libraries or third-party plugins">
+									  
+	<meta name="Keywords" content="Vanilla Javascript Slideshow, Create HTML elements dynamically with Javascript, Chinese porcelain slideshow, Han, Tang, Song and Ming Dynasty porcelain">
+    
+    <style>
+        
+        body {
+            background-color: #222B56;
+			font-family: sans-serif;
+			text-align: center;
+        }
+    
+        #slideshow {
+            background-color: #800;
+            min-height: 600px;
+            width: 1000px;
+            margin: 50px auto;
+            padding: 15px;
+        }
+		
+		header {
+			color: #FFF;
+		}
+        
+        #bigPicDiv {
+            width: 800px;
+            height: 475px;
+            background-color: azure;
+            float: left;
+            overflow-y: scroll;
+        }
+        
+        #thumbDiv {
+            width: 175px;
+            background-color: aqua;
+            height: 475px;
+            float: right;
+            overflow-y: scroll;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        #thumbDiv img {
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        #thumbDiv img:hover {
+            filter: saturate(5);
+        }
+		
+		footer {
+			height: 70px;
+			clear: both;
+			padding: 15px;
+			padding-top: 30px 15px 15px 15px;
+			color: #FFF;
+		}
+		
+		button {
+			font-size: 1rem;
+			padding: 5px 15px;
+			width: 150px;
+		}
+    
+    </style>
+    
+</head>
+    
+<body>
+    
+  <div id="slideshow">
+	  
+<!-- this header and all its text could be done in pure JS as well, but for SEO we do need to have at least some content in the body to match the keyonrds in the head --> 
+	  
+	  <header>
+		  
+		  <a href="chinese-porcelain-slideshow.zip" 
+			 style="color:white">DOWNLOAD ZIPPED SLIDESHOW w AJAX n JSON FOLDER</a>
+	  	 
+		 <h1>Vanilla Javascript Slideshow</h1>
+          
+          <hr/>
+		  
+		 <h2 id="dynasties">
+			  DYNASTY OUTPUTS HERE
+         </h2>
+		  
+		  <h3 id="captions">
+		  	  CAPTION OUTPUTS HERE
+		  </h3>
+		  
+	  </header>
+	  
+	</div>
+
+  <script src="js/slideshow.js"></script>
+    
+</body>
+
+</html>
